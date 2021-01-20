@@ -13,6 +13,10 @@
 		C4CACA1D25B8C4C700192E12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CACA1B25B8C4C700192E12 /* Main.storyboard */; };
 		C4CACA1F25B8C4C800192E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CACA1E25B8C4C800192E12 /* Assets.xcassets */; };
 		C4CACA2225B8C4C800192E12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CACA2025B8C4C800192E12 /* LaunchScreen.storyboard */; };
+		C4CACA3C25B8C8AA00192E12 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CACA3B25B8C8AA00192E12 /* MetalKit.framework */; };
+		C4CACA3E25B8C90800192E12 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CACA3D25B8C90800192E12 /* Metal.framework */; };
+		C4CACA4125B8C91E00192E12 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CACA3F25B8C91E00192E12 /* MetalPerformanceShaders.framework */; };
+		C4CACA4225B8C91E00192E12 /* MetalPerformanceShadersGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CACA4025B8C91E00192E12 /* MetalPerformanceShadersGraph.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C4CACA1E25B8C4C800192E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4CACA2125B8C4C800192E12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4CACA2325B8C4C800192E12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4CACA3B25B8C8AA00192E12 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		C4CACA3D25B8C90800192E12 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		C4CACA3F25B8C91E00192E12 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		C4CACA4025B8C91E00192E12 /* MetalPerformanceShadersGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShadersGraph.framework; path = System/Library/Frameworks/MetalPerformanceShadersGraph.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CACA3E25B8C90800192E12 /* Metal.framework in Frameworks */,
+				C4CACA4125B8C91E00192E12 /* MetalPerformanceShaders.framework in Frameworks */,
+				C4CACA3C25B8C8AA00192E12 /* MetalKit.framework in Frameworks */,
+				C4CACA4225B8C91E00192E12 /* MetalPerformanceShadersGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,7 @@
 			children = (
 				C4CACA1425B8C4C700192E12 /* metalInitialize */,
 				C4CACA1325B8C4C700192E12 /* Products */,
+				C4CACA3A25B8C8AA00192E12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +78,17 @@
 				C4CACA2325B8C4C800192E12 /* Info.plist */,
 			);
 			path = metalInitialize;
+			sourceTree = "<group>";
+		};
+		C4CACA3A25B8C8AA00192E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4CACA3F25B8C91E00192E12 /* MetalPerformanceShaders.framework */,
+				C4CACA4025B8C91E00192E12 /* MetalPerformanceShadersGraph.framework */,
+				C4CACA3D25B8C90800192E12 /* Metal.framework */,
+				C4CACA3B25B8C8AA00192E12 /* MetalKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
